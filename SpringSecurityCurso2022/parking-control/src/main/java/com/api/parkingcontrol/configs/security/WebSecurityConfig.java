@@ -21,7 +21,7 @@ import org.springframework.security.web.SecurityFilterChain;
  * @author zigui
  */
 @Configuration
-@EnableMethodSecurity
+@EnableMethodSecurity(prePostEnabled = true)
 @EnableWebSecurity
 public class WebSecurityConfig {
 
@@ -40,9 +40,9 @@ public class WebSecurityConfig {
                 .httpBasic()
                 .and()
                 .authorizeHttpRequests()
-                .requestMatchers(HttpMethod.GET, "/parking-spot/**").permitAll()
-                .requestMatchers(HttpMethod.POST, "/parking-spot").hasRole("USER")
-                .requestMatchers(HttpMethod.DELETE, "/parking-spot/**").hasRole("ADMIN")
+            //    .requestMatchers(HttpMethod.GET, "/parking-spot/**").permitAll()
+            //    .requestMatchers(HttpMethod.POST, "/parking-spot").hasRole("USER")
+              //  .requestMatchers(HttpMethod.DELETE, "/parking-spot/**").hasRole("ADMIN")
                 .anyRequest()
                 .authenticated()
                 .and()
