@@ -1,0 +1,48 @@
+Acesse o site.
+https://start.spring.io/
+
+Instale o Postgreesql
+https://www.postgresql.org/download/windows/
+
+Crie um banco de dados. 
+parking-control-db
+
+Adicione as configurações no arquivo application.properties.
+spring.data
+
+
+
+Adicione no pom.xml.
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+                <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
+                </configuration>
+            </plugin>
+			
+			
+
+
+
+
+
+Fonte:
+Spring Boot | Curso Completo 2022
+https://www.youtube.com/watch?v=LXRU-Z36GEU
+
+
+
+Continuação do curso.
+https://www.youtube.com/watch?v=t6prPki7daU

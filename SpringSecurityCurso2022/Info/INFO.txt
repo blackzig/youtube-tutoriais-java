@@ -1,0 +1,29 @@
+Fonte:
+Spring Boot | Curso Completo 2022
+https://www.youtube.com/watch?v=LXRU-Z36GEU
+
+
+
+Continuação do curso.
+Spring Security | Curso 2022
+https://www.youtube.com/watch?v=t6prPki7daU
+
+
+Spring Security - Do Spring Security 5 para Spring Security 6
+https://www.youtube.com/watch?v=WTubZiAw9ls&t=1133s
+
+
+
+
+
+insert into tb_role values(gen_random_uuid(), 'ROLE_ADMIN');
+insert into tb_role values(gen_random_uuid(), 'ROLE_USER');
+
+insert into tb_users_roles values('f0c6453a-2e99-4e24-b7be-c2c3dbd4b961','a6e7d70c-70eb-4ba8-898e-5192dcc5a322');
+insert into tb_users_roles values('38fa9839-ebe0-426f-bdc0-e8127120d267','be8ba756-374e-488d-9a99-c78c9ea1e9fc');
+
+select * from tb_role;
+
+select * from tb_user;
+
+select * from tb_users_roles;
